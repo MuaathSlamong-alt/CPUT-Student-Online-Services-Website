@@ -1,0 +1,39 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h2 {
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #0198cd;
+    border-radius: 4px;
+}
+#loginForm .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #0198cd;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+.login-link {
+    margin-top: 10px;
+    text-align: center;
+}
+form {
+    border: 2px solid #0198cd; /* Adds a 2px solid border with a color */
+    border-radius: 8px;        /* Optional: Rounds the corners of the border */
+    padding: 20px;             /* Adds space inside the form around the content */
+    background-color: #ffffff; /* Ensures the form background is white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}

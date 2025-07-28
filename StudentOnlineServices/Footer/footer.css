@@ -1,0 +1,62 @@
+.footer {
+    background-color: #0198cd; 
+    color: #ffffff; 
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the three sections */
+    align-items: center; /* Center-align vertically */
+    text-align: center; /* Ensures centering */
+}
+
+.footer .footer-info {
+    flex: 1; /* Takes up available space on the left */
+    text-align: left; /* Aligns footer info to the left */
+}
+
+.footer .list-inline {
+    margin: 0; /* Removes extra margins */
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer .list-inline-item {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer .list-inline-item a {
+    color: #ffffff; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .list-inline-item a:hover {
+    color: #f8f9fa;
+}
+
+.footer span {
+    flex: 1; /* Takes up space in the center */
+    text-align: center; /* Centers the text */
+    font-size: 16px;
+}
+
+.social-links {
+    flex: 1; /* Takes up available space on the right */
+    text-align: right; /* Aligns social icons to the right */
+}
+
+.social-links a {
+    color: white; /* Sets the link color to white */
+    margin-left: 5px; /* Adds spacing between icons */
+    font-size: 20px; /* Adjusts the icon size if necessary */
+}
+
+.social-links a:hover {
+    color: #ccc; /* Optional: Changes the color on hover */
+}

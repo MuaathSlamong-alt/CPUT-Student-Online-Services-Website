@@ -1,0 +1,58 @@
+/* Header CSS */
+.header-container {
+    padding: 10px;
+    margin-bottom: 16px;
+    background-color: #0198cd;
+    position: fixed; /* Keep header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+    font-family: Verdana, sans-serif;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Custom styles for dropdown toggle */
+.dropdown-toggle::after {
+    color: white; /* Change caret color to white */
+    font-size: 24px; /* Set caret size in px */
+    margin-left: 8px; /* Space between text and caret */
+}
+
+.dropdown-toggle img {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: -80px; /* Adjust this value to move the logo to the left */
+}
+
+.header-logo img {
+    margin-right: 1px; /* Space between logo and the SVG */
+    width: 150px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: #0198cd; /* Background color when hovered, focused, or active */
+    color: #ffffff; /* Text color when hovered, focused, or active */
+}
+
+.header-name {
+    font-size: 30px; /* Adjust the size as needed */
+   /* font-weight: bold;*/
+    color: #ffffff; /* Ensure the text color remains visible */
+    margin-left: 500px; /* Move the name closer to the icon */
+}

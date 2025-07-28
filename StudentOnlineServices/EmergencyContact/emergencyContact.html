@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contacts</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="emergencyContact.css">
+    <link rel="stylesheet" href="../SideMenu/sideMenu.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../Header/header.css">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-container">
+        <div class="container">
+            <div class="header-content">
+                <a href="../HomePage/home page.html" class="header-logo link-body-emphasis text-decoration-none">
+                    <img src="../Images/cput logo2.jpg" alt="Logo" width="40" height="32" class="mr-2">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+
+                <div class="header-name" id="studentName" >Student</div>
+
+                <div class="dropdown dropdown-custom">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../Images/person icon.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="../SignIn/sign in.html">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <!-- Side Menu -->
+   <div class="vertical-btn-group" id="buttonGroup">
+    <div class="btn-group">
+        <button id="button1" type="button" class="btn btn-secondary dropdown-toggle fixed-size-btn" onclick="moveNextButton(this)">
+            Student Information
+        </button>
+        <div id="dropdown1" class="dropdown-menu">
+            <button class="dropdown-item" type="button"><a href="../PersonalInformation/PersonalInformationUpdate.html">Personal Information</a></button>
+            <button class="dropdown-item" type="button"><a href="../PersonalContactDetails/PersonalContactDetails.html">Personal Contact Details</a></button>
+            <button class="dropdown-item" type="button"><a href="../Address/AddressValidation.html">Address Validation</a></button>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button id="button2" type="button" class="btn btn-secondary dropdown-toggle fixed-size-btn" onclick="moveNextButton(this)">
+            Course Information
+        </button>
+        <div id="dropdown2" class="dropdown-menu">
+            <button class="dropdown-item" type="button">Course Availability</button>
+            <button class="dropdown-item" type="button">Course Overview</button>
+            <button class="dropdown-item" type="button">Enrolment</button>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button id="button3" type="button" class="btn btn-secondary dropdown-toggle fixed-size-btn" onclick="moveNextButton(this)">
+            Finance Information
+        </button>
+        <div id="dropdown3" class="dropdown-menu">
+            <button class="dropdown-item" type="button"><a href="../FinancialAid/financialAid.html">Financial Aid</a></button>
+            <button class="dropdown-item" type="button"><a href="../TuitionFee/tuitionFee.html">Tuition Fee</a></button>
+            <button class="dropdown-item" type="button"><a href="../PaymentHistory/paymentHistory.html">Payment History</a>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button id="button4" type="button" class="btn btn-secondary dropdown-toggle fixed-size-btn" onclick="moveNextButton(this)">
+            Health Information
+        </button>
+        <div id="dropdown4" class="dropdown-menu">
+            <button class="dropdown-item" type="button"><a href="../MedicalHistory/medicalHistory.html">Medical History</a></button>
+            <button class="dropdown-item" type="button"><a href="../InsuranceProvider/insuranceProvider.html">Insurance Provider</a></button>
+            <button class="dropdown-item" type="button"><a href="../EmergencyContact/emergencyContact.html">Emergency Contact</a></button>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button id="button6" type="button" class="btn btn-secondary dropdown-toggle fixed-size-btn" onclick="moveNextButton(this)">
+            Residence Information
+        </button>
+        <div class="dropdown-menu">
+            <button class="dropdown-item" type="button"><a href="../Residence/residence.html">Residence Registration</a></button>
+            <button class="dropdown-item" type="button" onclick="showRegistrationDetails()">Residence Details</button>
+            <button class="dropdown-item" type="button"><a href="#" data-toggle="modal" data-target="#rulesModal">Rules and Regulations</a></button>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button id="button5" type="button" class="btn btn-secondary dropdown-toggle fixed-size-btn" onclick="moveNextButton(this)">
+            Assessment Status
+        </button>
+        <div id="dropdown5" class="dropdown-menu">
+            <button class="dropdown-item" type="button"><a href="../Grade/grade.html">Grade</a></button>
+            <button class="dropdown-item" type="button"><a href="../Status/status.html">Status</a></button>
+            <button class="dropdown-item" type="button"><a href="../Year/year.html">Year</a></button>
+        </div>
+    </div>
+</div>
+
+    <!-- Table -->
+    <section class="wrapper-main">
+        <table>
+            <thead>
+                <tr>
+                    <th class="header-1">Student Name</th>
+                    <th class="header-2">Father</th>           
+                    <th class="header-3">Mother</th>
+                    <th class="header-4">Insurance</th>
+                    <th class="header-5">Alternate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div class="footer-info">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+              <li class="list-inline-item"><a href="#" class="text-white">Contact Us</a></li>
+            </ul>
+          </div>
+          <span class="text-white">&copy; 2024 CPUT. All Rights Reserved.</span>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+    
+    <!-- Bootstrap and Custom JS -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="emergencyContact.js"></script>
+    <script src="..//SideMenu/sideMenu.js"></script>
+
+</body>
+</html>

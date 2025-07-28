@@ -1,0 +1,54 @@
+/* Basic styles for the footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Styling for header and content */
+.header-container {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+.content {
+    padding: 20px;
+    margin-left: 250px; /* Keep this for side menu */
+    text-align: center; /* Center-align content */
+    max-height: calc(100vh - 120px); /* Adjust max height considering header and footer */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Rules and Regulations iframe container */
+.rules-container {
+    margin-top: 20px; /* Spacing above the container */
+    border: 1px solid #007bff; /* Border matching the theme color */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the iframe */
+#rulesIframe {
+    display: none; /* Initially hidden */
+    width: 100%; /* Full width */
+    height: 500px; /* Height for the iframe */
+    border: none; /* Remove default iframe border */
+}
+
+/* Fixed size for buttons */
+.fixed-size-btn {
+    width: 200px; /* Adjust size as needed */
+}
+
+/* Ensure the buttons align properly and have spacing */
+button {
+    margin-top: 10px;
+    display: inline-block; /* Ensure buttons align horizontally */
+}
+
+#editButton, #deleteButton, #updateButton {
+    margin-right: 10px;
+}
