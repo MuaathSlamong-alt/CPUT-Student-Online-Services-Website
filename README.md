@@ -1,1 +1,1 @@
-A student online services website for student of CPUT to access their student information
+A student online services website for students of CPUT to access their student information, such as finance,
